@@ -1,0 +1,29 @@
+Bargainrfr.py
+This code appears to be implementing a Random Forest Regression model using scikit-learn library in Python.
+The dataset used in this code is read from a CSV file 'Customerdata.csv' and is split into training and testing sets using the train_test_split method.
+The features in the dataset are standardized using the StandardScaler method from scikit-learn.
+A Random Forest Regression model is then fitted to the training set data, with n_estimators set to 600 and random_state set to 42. The model is then used to make predictions on the test set data.
+The code then calculates the R-squared score, which is a measure of how well the model fits the data. The R-squared score ranges from 0 to 1, with 1 indicating a perfect fit.
+A RandomizedSearchCV method is used to perform a randomized search for the best hyperparameters for the Random Forest model. The hyperparameters include the number of trees, the number of features to consider at each split, the maximum depth of the trees, and other parameters.
+The code then evaluates the performance of the model by calculating its accuracy and mean absolute error using the evaluate function.
+Finally, the code calculates the mean absolute error, mean squared error, and root mean squared error between the predicted and actual values using the metrics methods from scikit-learn.
+
+
+
+Update DecisionTreeRegression.py
+This code is similar to the code you posted earlier for implementing a Decision Tree Regression model using scikit-learn library in Python.
+The dataset used in this code is read from a CSV file 'Customerdata.csv' and is split into training and testing sets using the train_test_split method.
+A Decision Tree Regression model is then fitted to the training set data, with random_state set to 42. The model is then used to make predictions on the test set data.
+The code then saves the model as a pickle file named "model.pkl".
+The code then calculates the R-squared score, which is a measure of how well the model fits the data. The R-squared score ranges from 0 to 1, with 1 indicating a perfect fit.
+The code then generates a visualization of the decision tree using the export_graphviz method from scikit-learn and writes it to a PDF file named "tree.pdf".
+Finally, the code evaluates the performance of the model by calculating its accuracy using the actual and predicted values. The accuracy calculation involves checking if the predicted value falls within a range of +/- 1% of the actual value. The code then prints the actual count, predicted count, error count, and accuracy of the model.
+Overall, the code appears to be a valid implementation of a Decision Tree Regression model for the given dataset.
+
+
+__init__.py
+This code appears to be a Flask web application that allows users to enter some input values and get a price prediction from a previously trained Decision Tree Regression model.
+The "model.pkl" file is loaded using the pickle module and the valuepredictor function takes the user input, applies the model to predict the price, and returns the result.
+The Flask application has three routes, the first one ('/') renders the home page of the application, the second route ('/result') processes the user input, performs the price prediction, and renders a result page.
+The application has a global variable 'count' which is initially set to zero. This is used to keep track of the number of times a user has submitted a form, and the value of 'count' is used to determine which result page should be displayed. The application also writes the user's input and the system's output to a text file named 'data.txt'.
+The application seems to be well-implemented and should work as intended. However, it may be useful to add some error handling and input validation to improve the reliability of the application.

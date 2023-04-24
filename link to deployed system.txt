@@ -1,0 +1,21 @@
+http://deemashoko.pythonanywhere.com/
+
+
+
+this aboove link will show the running system
+to view the backend of the system may you use the login details below
+the system was developed using python flash
+
+
+
+
+
+Login Details into Pythonanywhere
+
+website-https://www.pythonanywhere.com
+
+username- deemashoko
+
+password-macmash16
+
+
